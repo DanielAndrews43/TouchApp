@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Touch</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="zero">0</string>
+    <string name="blank"></string>
+    <string name="title_activity_game_over">GameOverActivity</string>
+    <string name="game_over">Game Over!</string>
+    <string name="game_over_score">Score:</string>
+    <string name="over_retry">Retry</string>
+    <string name="touch_start">Touch anywhere to begin!</string>
+    <string name="thirty_seconds">30.0</string>
+    <string name="game_over_high_score">High Score:</string>
+
+</resources>
