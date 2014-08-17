@@ -96,7 +96,7 @@ public class TouchActivity extends Activity {
         }
 
         public void startGame() {
-            final int TIMER_TIME = 30000; //30 seconds
+            final int TIMER_TIME = 15000; //15 seconds
             running = true;
 
             //Set up timer
@@ -125,7 +125,7 @@ public class TouchActivity extends Activity {
             screen.setOnTouchListener(new RelativeLayout.OnTouchListener() {
                 @Override
                 public boolean onTouch(View v, MotionEvent m) {
-                    if (running && m.getActionMasked() == MotionEvent.ACTION_DOWN) {
+                    if (running && (m.getActionMasked() == MotionEvent.ACTION_DOWN || m.getActionMasked() == MotionEvent.ACTION_POINTER_DOWN)) {
                         addNumber();
                     }
                     return true;

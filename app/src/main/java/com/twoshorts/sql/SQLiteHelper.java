@@ -73,4 +73,13 @@ public class SQLiteHelper extends SQLiteOpenHelper{
         }
         return highscore;
     }
+
+    public int findTotalScore(){
+        int total = 0;
+        List<Integer> allScores = getAllScores();
+        for(int score: allScores){
+            total += score;
+        }
+        return total;
+    }
 }
